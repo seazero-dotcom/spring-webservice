@@ -1,4 +1,4 @@
-package com.seazero.springwebservice;
+package com.seazero.webservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
