@@ -2,5 +2,17 @@ spring:
   h2:
     console:
       enabled: true
-#application.properties를 사용해도 무방하지만 굳이 yml로 변경한 이유는 properties에 비해 상대적으로 유연한 구조를 가졌기 때문이다
-#yml은 상위 계층에 대한 표현, List 등을 완전하게 표현할수가 있다
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test2
+    driver-class-name: org.h2.Driver
+    username: sa
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    output:
+      ansi:
+        enabled: always
+  logging:
+    level:
+      org.hibernate.type: trace

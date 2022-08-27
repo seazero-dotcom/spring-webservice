@@ -30,8 +30,8 @@ public class Posts {
      *
      */
 
-    @Column(length = 500, nullable = false) // 테이블의 컬럼을 나타내면, 굳이 이걸 선언하지 않더라도 해당 클래스의 필드는 모두 컬럼이 된다!
     // 사용하는 이유는, 기본값 외에 추가로 변경이 필요한 옵션이 있을경우 사용한다 | 문자열의 경우 VARCHAR(255)가 기본값인데, (ex; title)사이즈를 500으로 늘리고 싶거나, (ex; contnet)타입을 TEXT로 변경하고 싶거나 등의 경우에 사용된다
+    @Column(length = 500, nullable = false) // 테이블의 컬럼을 나타내면, 굳이 이걸 선언하지 않더라도 해당 클래스의 필드는 모두 컬럼이 된다!
     private String title;
 
     @Column(columnDefinition = "TEXT", nullable = false)

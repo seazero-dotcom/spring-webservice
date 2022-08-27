@@ -52,7 +52,7 @@ public class WebRestController {
     @Getter
     @Setter // Controller에서 @RequestBody로 외부에서 데이터를 받는 경우에는 [기본생성자 + set메소드 ]를 통해서만 값이 할당되기때문에 이때만 setter를 허용한다
     @NoArgsConstructor
-    public class PostsSaveRequestDto {
+    public static class PostsSaveRequestDto { // 여기를 static으로 하니까 postman으로 넣을 수 있었다.. 흑흑
         private String title;
         private String content;
         private String author;
